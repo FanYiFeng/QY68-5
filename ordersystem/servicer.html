@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <link href = "bootstrap.min.css" rel = "stylesheet">
+  <script src="jquery-2.1.3.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+
+	<style>		
+		*{margin:0px;padding:0px;}
+		div{
+			border:0px red solid;
+		}
+		.page-back{
+			width:100%;
+			height:750px;
+			position:absolute;
+			background-color:#fff;
+		}
+		#allpage-back{
+			background:url(images/000001.jpg);
+		}
+		.button-control{
+		width:80px;
+		margin-top:15px;
+		text-align:center;
+		}
+	</style>
+ </HEAD>
+
+ <BODY>
+ <div class="page-back" id="allpage-back"></div>
+ <div class="container">	
+	<div class="page-header">
+		<!-- 导航栏 -->
+		<nav class="navbar navbar-default" style="margin:-25 0 -15 0;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">brand</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<p class="navbar-text">已用桌位:<span class="badge" id="usetable">12</span></p>
+				<p class="navbar-text">剩余桌位:<span class="badge" id="surplustable">12</span></p>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#myModal">服务员登录</a></li>
+						<!-- 登录模态框 -->
+						<div class="modal fade bs-example-modal-sm" id="myModal" role="modal" aira-label="myModalLabel" aria-hidden="true" data-backdrop="true">
+							<div class="modal-dialog modal-sm">
+								<div class="modal-content">
+									<div class="modal-header" style="background-color:#0000CC;color:white;">
+										<button class="close" type="button" data-dismiss="modal" aria-label="close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+										<h3 style="text-align:center;">欢迎登录</h3>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label class= "control-label">用户名:</label>
+												<input type="text" class="form-control" placeholder="账号">
+											</div>
+											<div class="form-group">
+												<label class="control-label">密码:</label>
+												<input class="form-control" type="text" placeholder="密码">
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">退出</button>
+										<button type="button" class="btn btn-primary" >登录</button>
+									</div>
+								</div>
+							</div>
+						  </div>
+					<li><a href="#">帮助</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="搜索">
+					</div>					
+					<button class="btn btn-default" type="submit" >搜索</button>					
+				</form>				
+			</div>
+		</div>
+	</nav>
+
+	</div>
+
+	<!-- 功能区 -->
+	<div class="body" style="margin-top:0px;">
+		<div class="row">
+			<div class="col-md-10">
+				<iframe id="main" name="main" width="100%" frameborder=0 height="590px" scrolling="no" src="ManagementTable.html" >					
+					
+				</iframe>
+			</div>
+			<div class="col-md-2">
+				<div class="list-group">
+				  <a href="ManagementTable.html" target="main"class="list-group-item">餐桌管理</a>
+				  <a href="###" class="list-group-item">餐桌预定</a>
+				  <a href="###" class="list-group-item">订单查询</a>
+				  <a href="###" class="list-group-item">菜品管理</a>
+				  
+				</div>
+				<a href="###" class="btn btn-danger button-control"  role="button">清台</a>
+				<a href="###" class="btn btn-danger button-control"  role="button">清扫结束</a><BR>
+				<a href="###" class="btn btn-primary button-control" role="button">买单</a>
+				<a href="###" class="btn btn-primary button-control" role="button">交班报表</a><BR>
+				<a href="###" class="btn btn-warning button-control" role="button">催菜</a>
+				<a href="###" class="btn btn-warning button-control" role="button">查看流水</a><BR>
+				<a href="###" class="btn btn-danger button-control" role="button">拆台</a>
+				<a href="javascript: window.parent.right.history.go(0);"class="btn btn-success button-control" role="button">刷新桌位</a>
+				
+			</div>
+		</div>
+	</div>
+ </div>
+ </BODY>
+</HTML>

@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <link href = "bootstrap.min.css" rel = "stylesheet">
+  	<script src="jquery-2.1.3.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<style>
+		#mydiv{
+			width:100px;
+			height:100px;
+			background-color:red;
+			-webkit-transition:width 2s;
+			transition:width 2s;
+		}
+		#mydiv:hover{
+			width:400px;
+		}
+	</style>
+ </HEAD>
+
+ <BODY>
+	<form role = "form">
+		<div class = "form-group col-xs-3 has-warning has-feedback">
+			<label>用户名</label>
+			<input type = "text" class = "form-control">
+			<span class = "help-block">xxxx</span>
+		</div>
+	</form>
+	<div class = "container"><!-- 按钮样式 -->
+		<button class="btn btn-default">default</button>
+		<button class="btn btn-success">success</button>
+		<button class="btn btn-primary">primary</button>
+		<button class="btn btn-info">info</button>
+		<button class="btn btn-warning">warning</button>
+		<button class="btn btn-link">link</button>
+		
+	</div>
+		
+	<div class="div">
+		<button class="btn btn-danger btn-lg">danger</button><!-- 最大号 -->
+		<button class="btn btn-danger">danger</button>
+		<button class="btn btn-danger btn-sm">danger</button>
+		<button class="btn btn-danger btn-xs">danger</button><!-- 最小号 -->
+	</div>
+	<button class="btn btn-danger btn-xs btn-block" >danger</button><!-- block充满父元素一行 -->
+	<a class = "btn btn-danger btn-xs" disabled = "disabled">danger</a> <!-- disabled禁用 -->
+	<img src = "flower2.jpg" alt = "" class = "img-circle"> <!-- 圆形样式图片 -->
+	<img src = "flower2.jpg" alt = "" class = "img-rounded"><!-- 圆角方形图片 -->
+	<img src = "flower2.jpg" alt = "" class = "img-thumbnail"><!-- 带边框的图片 -->
+	<div class="container">
+		<div class="dropdown pull-right"><!-- .pull-right调整位置到右边 -->
+			<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><!-- toggle为每次点击不同的状态 -->
+			下拉菜单
+			<span class="caret"></span> <!-- span 为后面的小箭头 -->
+			</button>
+			<ul class="dropdown-menu dropdown-menu-right" role = "menu" aria-labelledby="dropdownMenu1"><!-- dropdown-menu-right调整下拉表的位置 -->
+			<li role ="presentation" class="dropdown-header">每天任务</li><!-- 添加下拉表分类表头 -->
+			<li><a href="#" role = "menuitem">吃饭</a></li> <!--role代表是menu的一个item  -->
+			<li><a href="#" role = "menuitem">睡觉</a></li>
+			<li><a href="#" role = "menuitem">打豆豆</a></li><!-- 下拉菜单动作基于js 需要先引入js文件 -->
+			</ul>
+		</div>
+	</div>
+	<!-- 下拉式菜单按钮 -->
+	<div class="container">
+		<div class="btn-group dropdown pull-left">
+			<button class = "btn btn-info btn-lg" type="button">有惊喜</button>
+			<button type="button" class="btn btn-info dropdown-toggle btn-lg" data-toggle="dropdown">
+			<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu  dropdown-menu-left" role="menu">
+				<li><a href="#">11</a></li>
+				<li><a href="#">22</a></li>
+				<li><a href="#">33</a></li>
+				<li><a href="#">44</a></li>
+			</ul>
+		</div>
+	</div>
+			<!-- 输入框 -->
+	<div class="container">
+		<div class="input-group">
+			<span class="input-group-addon">$</span>
+			<input type="text" class="form-control" placeholder="username">
+		</div>
+		<div class="input-group">
+			<span class="input-group-btn">
+				<button class="btn " type="button">#</button>
+			</span>
+			<input type="text" class="form-control" placeholder="user">
+			<span class="input-group-addon">.00</span>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="input-group">
+					<span class="input-group-addon">
+					<!-- <input type="checkbox"> -->
+						<button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu  dropdown-menu-left" role="menu">
+							<li><a href="#">11</a></li>
+							<li><a href="#">22</a></li>
+							<li><a href="#">33</a></li>
+							<li><a href="#">44</a></li>
+						</ul>
+					
+					</span>
+					<input type="text" class="form-control">
+				</div>
+			</div>
+		</div>
+	</div>
+			<!-- 导航 需要有js函数的支持才能点击-->
+	<div class="container">
+		<ul id="mytab" class="nav nav-tabs" role="tablist"><!-- nav-pills 胶囊样式 nav-stacked 垂直展示 nav-justified 充满全屏展示 -->
+			<li class="active" role="presentation"><a href="#">Hello</a></li>
+			<li role="presentation"><a href="#">Home</a></li>
+			<li role="presentation"><a href="#">Menu</a></li>
+			<li role="presentation"><a href="#">Help</a></li>
+		</ul>
+	</div>
+	<script>
+	$("#mytab a").click(function(e){
+		e.preventDefault();
+		$(this).tab("show");
+	})
+	</script>
+		<!-- 导航条 -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">brand</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" id = "mytab">
+					<li class="active"><a href="#">hello</a></li>
+					<li><a href="#">hello</a></li>
+					<li><a href="#">hello</a></li>
+					<li><a href="#">hello</a></li>
+				</ul>
+				<form class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="搜索">
+					</div>					
+					<button class="btn btn-default" type="submit" >搜索</button>
+					
+				</form>
+				<!-- 右边下拉导航 -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="drop-toggle" data-toggle="dropdown">帮助<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class=""><a href="#">111</a></li>
+							<li class=""><a href="#">111</a></li>
+							<li class=""><a href="#">111</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<script>
+		$("#mytab a").click(function(e){
+		e.preventDefault();
+		$(this).tab("show");
+	})
+	</script>
+
+	<!-- 媒体对象 -->
+	<div class="container">
+		<div class="media">
+			<a class="media-left" href="#"><img src="flower2.jpg" alt="这是一个美女图"></a>
+			<div class="media-body">
+				<h4>aaa课堂</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+
+			<div class="media">
+			
+			<div class="media-body">
+				<h4>aaa课堂</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			</div>
+			<a class="media-right" href="#"><img src="flower2.jpg" alt="这是一个美女图"></a>
+		</div>
+			</div>
+		</div>
+		
+		<!-- 徽章 -->
+		<button class="btn btn-primary" type="button">
+		  Messages <span class="badge badge-warning">4</span>
+		</button>
+		
+		<!-- 警示框 -->
+		<div class="alert alert-warning" role = "alert">
+			Hello nihao!
+		</div>
+		<div class="alert alert-danger" role = "alert">
+			Hello nihao!
+		</div>
+		<div class="alert alert-danger" role = "alert">
+			<button class="close" type ="button" data-dismiss="alert" >
+				<span aria-disabled="true">&times;</span>
+			</button>
+			<strong>欢迎来到aaa</strong><br>
+			<strong>欢迎来到aaa</strong><br>
+			<strong>欢迎来到aaa</strong>
+		</div>
+
+		<!-- 进度条 -->
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style = "width:50%">
+				<span class="sr-only">60%</span>
+			</div><!-- striped 带条纹的进度条 active 动态的 -->
+			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style = "width:50%">
+				<span class="sr-only">60%</span>
+			</div>
+		</div>
+
+		<!-- 列表组 -->
+		<div class="list-group">
+		</div>
+		
+		<ul class="list-group">
+			<li class="list-group-item">阿嘎如泰嘎查<span class="badge">10</span></li>
+			<li class="list-group-item">阿嘎如泰嘎查</li>
+			<li class="list-group-item">阿嘎如泰嘎查</li>
+		</ul>
+		<!-- 模态框 -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">启动模态框</button>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModallable" aria-hidden="true" >
+			<div class="modal-dialog"><!-- fade动态显示 有慢动作效果 -->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">&times</span>
+						</button>
+						<h4 class="modal-title" id="myModallabel">Modal titile</h4>
+					</div>
+					<div class="modal-body">content</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 过度事件 -->
+	<div id="mydiv"></div>
+	<script>
+		//$("#myModal").modal("show");
+		document.getElementById("mydiv").addEventListener("transitionend",function(e){
+			this.innerHTML="过渡态完成";
+		})
+	</script>
+ </BODY>
+</HTML>
