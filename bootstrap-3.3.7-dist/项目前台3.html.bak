@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	  
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+	<style type="text/css">
+		body{
+			background:url("");
+			background-size:100%;
+		}
+		.nav-tabs{
+			font-size:30px;
+			
+		}.nav-pills{
+			width:200px;
+			font-size:25px;
+			margin-top:80px;
+		}.row{
+			margin-left:20%;
+			margin-top:-33%;
+			width:800px;
+			height:1000px;
+		}.row1{
+			margin-left:40%;
+			margin-top:-70%;
+			width:800px;
+		}.row2{
+			margin-left:60%;
+			margin-top:-50%;
+			width:800px;
+		}.row3{
+			margin-left:20%;
+			margin-top:33%;
+			width:800px;
+		}.row4{
+			margin-left:40%;
+			margin-top:33%;
+			width:800px;
+		}.row5{
+			margin-left:60%;
+			margin-top:33%;
+			width:800px;
+		}
+		.row6{
+			margin-left:20%;
+			margin-top:50%;
+			width:800px;
+		}.row7{
+			margin-left:40%;
+			margin-top:50%;
+			width:800px;
+		}.row8{
+			margin-left:60%;
+			margin-top:50%;
+			width:800px;
+		}.navbar-default{
+			width:100%;
+		}.btn-info{
+			margin-top:20px;
+		}
+		
+		.shuliang{
+			width:150px;
+			height:50px;
+			font-size:30px;
+			text-align:center;
+		}.nav-tabs{
+			width:100%;
+		}#shuliangzuo{
+			margin-left:150px;
+		}
+		.modal2-title{
+			margin-left:240px;
+		}.tab-pane{
+			width:1920px;
+		}#profile{
+			margin-top:100px;
+		}#yijian{
+			width:800px;
+			height:200px;
+		}#queding{
+			margin-left:50px;
+		}#collapseOne{
+			font-size:25px;
+		}#xiugai{
+			margin-left:700px;
+		}.modal fade{
+			height:500px;
+		}#pingfen{
+			width:40px;
+		}.navbar-default{
+			width:100%；
+		}.container{
+			width:100%;
+			margin-left:200px;
+		}#wodecaidan{
+			margin-left:1400px;
+			margin-top:13px;
+		}#sousuo1{
+			margin-top:5px;
+		}#sousuo2{
+			margin-top:17px;
+		}
+	</style>
+  <body>
+
+    
+  <!-- Nav tabs -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+	  <ul class="nav nav-tabs" role="tablist">
+		
+		<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span class=" glyphicon glyphicon-apple"></span>菜单信息<span class="glyphicon glyphicon-apple"></span></a></li>
+
+		<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">个人信息</a></li>
+		<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">积分商城</a></li>
+		<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+		<li>
+		<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" id="sousuo1" class="btn btn-default">搜索</button>
+		</form></li>
+		<li><button type="button" id="sousuo2" class="btn btn-info">桌号 031</button></li>
+		
+		<li role="presentation"><a href="项目前台.html" /><button type="button" class="btn btn-danger">返回主页面</button></a></li>
+		
+				
+	  </ul>
+	 </div>
+	</nav>
+	<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal9" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  </div>
+			  <div class="modal9-body">
+        <!--表单验证-->
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="submit" class="btn btn-default">注册</button>
+					</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+	<ul class="nav nav-pills nav-stacked">
+		<li role="presentation" class="active"><a href="#">招牌菜</a></li>
+		<li role="presentation"><a href="#">海鲜</a></li>
+		<li role="presentation"><a href="#">肉类</a></li>
+		<li role="presentation"><a href="#">菌菜类</a></li>
+		<li role="presentation"><a href="#">蔬菜类</a></li>
+		<li role="presentation"><a href="#">汤类</a></li>
+		<li role="presentation"><a href="#">鱼肉</a></li>
+		<li role="presentation"><a href="#">羊肉</a></li>
+		<li role="presentation"><a href="#">牛肉</a></li>
+		<li role="presentation"><a href="#">红酒</a></li>
+		<li role="presentation"><a href="#">饮料</a></li>
+		<li role="presentation"><a href="#">白酒和啤酒</a></li>
+	</ul>
+	<div class="row">
+		<div class="col-xs-6 col-md-3">
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="...">
+			</a>
+		</button>
+			
+			
+		</div>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><spanaria-hidden="true">&times;</span></button>
+	<h4 class="modal2-title" id="myModal2Label">鱼香肉丝</h4>
+    </div>
+    <div class="modal-body">
+        <img src="13152800091302.jpg" width="100%" alt="...">
+		<hr>
+				
+				<button type="button" id="shuliangzuo" class="btn1 btn-danger btn-lg">&nbsp;-&nbsp;</button>
+				<input class="shuliang" type="text" value="1"/>
+				<button type="button"id="shuliangyou" class="btn2 btn-danger btn-lg">&nbsp;+&nbsp;</button>
+		<hr>
+		
+		<button type="button" id="shuliangzuo" class="btn1 btn-danger btn-lg">&nbsp;-&nbsp;</button>
+		<input class="shuliang" type="text" value="微辣"/>
+		<button type="button"id="shuliangyou" class="btn2 btn-danger btn-lg">&nbsp;+&nbsp;</button>
+		<button type="button"id="queding" class="btn2 btn-danger btn-lg">确定</button>
+    </div>
+    </div>
+  </div>
+</div>			
+	<div class="row1">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+			</button>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal2" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal2-title" id="myModal2Label">宫保鸡丁</h4>
+			  </div>
+			  <div class="modal2-body">
+				<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+				<hr>
+				
+				<button type="button" id="shuliangzuo" class="btn1 btn-danger btn-lg">&nbsp;-&nbsp;</button>
+				<input class="shuliang" type="text" value="1"/>
+				<button type="button"id="shuliangyou" class="btn2 btn-danger btn-lg">&nbsp;+&nbsp;</button>
+				<hr>
+		
+				<button type="button" id="shuliangzuo" class="btn1 btn-danger btn-lg">&nbsp;-&nbsp;</button>
+				<input class="shuliang" type="text" value="微辣"/>
+				<button type="button"id="shuliangyou" class="btn2 btn-danger btn-lg">&nbsp;+&nbsp;</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	<div class="row2">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+		</button>
+		</div>
+	</div>
+	<div class="row3">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+		</button>
+		</div>
+	</div>
+	<div class="row4">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+		</button>
+		</div>
+	</div>
+	<div class="row5">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+		</button>
+		</div>
+	</div>
+	<div class="row6">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+		</button>
+		</div>
+	</div>
+	<div class="row7">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+		</button>
+		</div>
+	</div>
+	<div class="row8">
+		<div class="col-xs-6 col-md-3">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			<a href="#" class="thumbnail">
+			<img src="13152800091302.jpg" alt="..." width="100%" class="img-circle">
+			</a>
+			</button>
+		</div>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container">
+    <button type="button" id="wodecaidan" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal9">
+	我的菜单</button>
+	</div>
+	</nav>
+	</div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+			
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+				  <h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  您的个人信息
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				  <div class="panel-body">
+					<p class="text-success">您&nbsp;&nbsp;&nbsp;的&nbsp;&nbsp;&nbsp;用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名：<input type="text" id="gerenxinxi"placeholder="donghongwei"/></p>
+					<br/>
+					<p class="text-info">您关联的手机号是&nbsp;：<input type="text" id="gerenxinxi"placeholder="18603708444"/></p>
+					<br/>
+					<br/>
+					<br/>
+					<button type="button" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm">修改信息</button>
+					<br/>
+					<br/>
+					<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+					  <div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+						  <p class="text-success">您&nbsp;&nbsp;&nbsp;的&nbsp;&nbsp;&nbsp;用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名：<input type="text" id="gerenxinxi"placeholder="donghongwei"/></p>
+							<p class="text-info">您关联的手机号是&nbsp;：<input type="text" id="gerenxinxi"placeholder="18603708444"/></p>
+							<button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">取消</button>
+							<button type="button" id="xiugai" class="btn btn-warning  btn btn-lg">确认修改</button>
+						</div>
+					  </div>
+					</div>
+					
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+				  <h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  你以往的消费情况
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				  <div class="panel-body">
+					<table class="table table-hover">
+						<tr>
+							<td>光临次数</td><td>光临时间</td><td>所点菜品</td><td>消费金额</td>
+						</tr>
+						<tr>
+							<td>0</td><td>0</td><td>0</td><td>0</td>
+						</tr>
+						<tr>
+							<td>0</td><td>0</td><td>0</td><td>0</td>
+						</tr>
+						<tr>
+							<td>0</td><td>0</td><td>0</td><td>0</td>
+						</tr>
+					</table>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+				  <h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  请写下你对我们不满意的地方，我们一定竭力做到让您满意
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				  <div class="panel-body">
+				  <FONT SIZE="15" COLOR=""><B>请为我们的服务打分</B></FONT>
+				  <select id="pingfen" class="form-control">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+				</select>
+				<BR/>
+				<BR/><BR/>
+
+				<BR/>
+				请填写你最宝贵的意见
+					<textarea class="form-control" rows="3"></textarea>
+				  </div>
+				</div>
+			  </div>
+			</div>
+				</div>
+    <div role="tabpanel" class="tab-pane" id="messages"><img src="13152800091302.jpg"/>
+	dsfdsfds</div>
+    <div role="tabpanel" class="tab-pane" id="settings"><img src="855afb27317633aa17385d7948db026ef74f244a184f3-OEcmVE_fw658.jpg"/></div>
+  </div>
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script language="java/script">
+	
+	</script>
+  </body>
+</html>
